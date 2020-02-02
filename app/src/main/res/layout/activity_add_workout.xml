@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".ActivityAddWorkout">
+    <TextView
+        android:paddingLeft="20dp"
+        android:text="Workout Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/workoutTitle"
+        android:hint="Enter workout name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/workout_box"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColorHint="@android:color/white"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnCreate"
+        android:text="@string/create"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        android:background="@drawable/create_btn_shap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="@string/cancel"
+        style="@style/red_button"/>
+</LinearLayout>

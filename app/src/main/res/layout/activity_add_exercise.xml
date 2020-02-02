@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        tools:context=".ActivityAddExercise">
+        <TextView
+            android:text="Name of the exercise"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/exerciseTitle"
+            android:hint="Enter exercise name"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Number of Series"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/series"
+            android:hint="Enter series"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Number of repetition"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/repetition"
+            android:hint="Enter repetition"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Rhythm"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/Rhythm"
+            android:hint="Enter Rhythm"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Rest between series"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/rest_series"
+            android:hint="Enter rest in seconds"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Rest between exercise"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/rest_exercise"
+            android:hint="Enter rest in seconds"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/workout_box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColorHint="@android:color/white"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCreate"
+            android:text="@string/create"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:background="@drawable/create_btn_shap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="@string/cancel"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:background="@drawable/theme_btn_shap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

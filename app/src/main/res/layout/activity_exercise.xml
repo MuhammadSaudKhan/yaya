@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:overScrollMode="always"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ActivityExercise">
+        <include android:id="@+id/header" layout="@layout/header"/>
+        <LinearLayout
+            android:id="@+id/recyclerView"
+            android:padding="20dp"
+            android:layout_below="@+id/header"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_delWorkout"
+            style="@style/red_button"
+            android:text="Delete Workout"
+            android:layout_below="@+id/recyclerView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_editWorkout"
+            android:layout_below="@+id/btn_delWorkout"
+            style="@style/red_button"
+            android:text="Edit Workout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_below="@+id/btn_editWorkout"
+            android:background="@drawable/create_btn_shap"
+            android:text="Go"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</ScrollView>
