@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".ActivityTimer">
-    <ProgressBar
-        android:id="@+id/simpleProgressBar"
+    <TextView
+        android:id="@+id/exercise_name"
+        android:text="Exercise C1"
+        android:textSize="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:layout_marginTop="20dp"
-        android:progress="20"
-        style="@style/MyProgressBar"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/timer"
+        android:text="00:27"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/CountProgressBar"
+            android:layout_width="0dp"
+            android:layout_weight="4.7"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_marginTop="20dp"
+            android:progress="20"
+            android:progressDrawable="@drawable/progressbar_shap"
+            style="@style/MyProgressBar"/>
+        <TextView
+            android:id="@+id/percent"
+            android:text="54%"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

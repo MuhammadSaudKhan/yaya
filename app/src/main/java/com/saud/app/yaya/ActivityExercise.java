@@ -21,6 +21,7 @@ import com.saud.app.yaya.Database.exercise.DbExercise;
 import com.saud.app.yaya.Database.workout.DbWorkout;
 import com.saud.app.yaya.Model.exercise;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ActivityExercise extends AppCompatActivity {
@@ -41,10 +42,14 @@ public class ActivityExercise extends AppCompatActivity {
         btn_editWorkout=findViewById(R.id.btn_editWorkout);
         btn_go=findViewById(R.id.btn_go);
         Intent intent=getIntent();
+        final DbExercise ex=new DbExercise(getApplicationContext());
         btn_go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ActivityExercise.this,ActivityTimer.class));
+                List<exercise> ex_list= ex.fetchExerciseOfworkout(workoutId);
+                Intent intent1=new Intent(ActivityExercise.this,ActivityTimer.class);
+                intent1.putExtra("list",(ArrayList<exercise>)ex_list);
+                startActivity(intent1);
             }
         });
         if(intent.getStringExtra("workout_id")!=null)
